@@ -1,13 +1,20 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <header-component></header-component>
+    <h2>Todo Management.</h2>
+    <hr>
     <router-view/>
   </div>
 </template>
 
 <script>
+import myHeader from '@/components/MyHeader'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    'header-component': myHeader
+  }
 }
 </script>
 
